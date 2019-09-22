@@ -6,9 +6,8 @@ title: Xin's Blog.
 
 asdf
 
-## Subtitle
+## Study Notes.
 
 {% for p in site.pages %}
-{{ p.title }}
-{{ p.content }}
+[{{ p.title }}]({{ p.url }})
 {% endfor %}
