@@ -2,9 +2,14 @@
 title: Xin's Blog.
 ---
 
-# New title
+## Blogs
 
-asdf
+{% for p in site.posts %}
+### [{{ p.title }}]({{ p.url }})
+
+{{ p.excerpt }}
+---
+{% endfor %}
 
 ## Study Notes.
 
