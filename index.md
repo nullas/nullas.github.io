@@ -1,9 +1,14 @@
+---
+title: Xin's Blog.
+---
+
 # New title
 
 asdf
 
 ## Subtitle
 
-asdf
-- asdf
-- df
+{% for p in site.pages %}
+{{ p.title }}
+{{ p.content }}
+{% endfor %}
