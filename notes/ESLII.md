@@ -5,7 +5,7 @@ title: Notes on ESLII
 
 ### 7.1
 
-It suffices to prove $\sum_{i=1}^{N}\text{Cov}(\hat{y}_i, y_i) = d \$^2_\epsilon$. Assume the linear system to solve is 
+It suffices to prove $\sum_{i=1}^{N}\text{Cov}(\hat{y}_i, y_i) = d \sigma^2_\epsilon$. Assume the linear system to solve is 
 $$
 \begin{aligned}
 X\beta=Y\end{aligned}\\
@@ -20,9 +20,9 @@ $$
 &=E[\text{tr}(\bold{\epsilon}^*XX^+\bold{\epsilon})]\\
 &=E(\text{tr}(XX^+\bold{\epsilon}\bold{\epsilon}^*))\\
 &=\text{tr}(XX^+E[\bold{\epsilon}\bold{\epsilon}^*])\\
-&=\$_{\epsilon}^2\text{tr}(XX^+)\\
-&=\$_{\epsilon}^2\text{tr}(X^+X)\\
-&=\$_{\epsilon}^2\text{tr}(I_d)=d\$_{\epsilon}^2\\
+&=\sigma_{\epsilon}^2\text{tr}(XX^+)\\
+&=\sigma_{\epsilon}^2\text{tr}(X^+X)\\
+&=\sigma_{\epsilon}^2\text{tr}(I_d)=d\sigma_{\epsilon}^2\\
 \end{aligned}
 $$
 
