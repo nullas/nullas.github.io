@@ -1,5 +1,6 @@
 ---
 title: Notes on numerical linear algebra
+layout: page
 
 ---
 
@@ -19,7 +20,7 @@ title: Notes on numerical linear algebra
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
-\end{bmatrix}$
+\end{bmatrix}$;
 
 - (b) $\begin{bmatrix}
 2 & 0 \\
@@ -36,7 +37,7 @@ title: Notes on numerical linear algebra
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
-\end{bmatrix}$
+\end{bmatrix}$;
 
 - \(c\) $\begin{bmatrix}
 0 & 2 \\
@@ -56,7 +57,7 @@ title: Notes on numerical linear algebra
 \begin{bmatrix}
 0 & 1 \\
 1 & 0
-\end{bmatrix}$
+\end{bmatrix}$;
 
 - (d) $\begin{bmatrix}
 1 & 1 \\
@@ -73,9 +74,9 @@ title: Notes on numerical linear algebra
 \begin{bmatrix}
 \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \\
 \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}
-\end{bmatrix}$
+\end{bmatrix}$;
 
-- (d) $\begin{bmatrix}
+- (e) $\begin{bmatrix}
 1 & 1 \\
 1 & 1
 \end{bmatrix}=
@@ -90,12 +91,12 @@ title: Notes on numerical linear algebra
 \begin{bmatrix}
 \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \\
 \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}
-\end{bmatrix}$
+\end{bmatrix}$.
 
 ### 4.2
 Let $A=U\Sigma V^*$, and
 $$R = \begin{bmatrix}0 & \dots & 1\\ \vdots & \ddots & \vdots \\ 1 & \dots & 0 \end{bmatrix}$$
-is reverse diagonal. $rotate90(A)=A^*R=V\Sigma^*(UR)^*$.  Note that $RV$ is unitary because $(UR)^*(UR)=R^*U^*UR=R^*R=I$.
+is reverse diagonal. $\text{rotate90}(A)=A^*R=V\Sigma^*(UR)^*$.  Note that $RV$ is unitary because $(UR)^*(UR)=R^*U^*UR=R^*R=I$.
 
 ### 4.3
 ```python
@@ -145,4 +146,4 @@ Let the rank of $A$ be $r$. $A=U\Sigma V^*$ and $\Sigma = \begin{bmatrix}\sigma_
 
 ### 5.3
 
-
+<pre class="prettyprint">
