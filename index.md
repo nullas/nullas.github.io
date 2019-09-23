@@ -1,5 +1,6 @@
 ---
 title: Xin's Blog.
+layout: page
 ---
 
 ## Blogs
@@ -8,11 +9,11 @@ title: Xin's Blog.
 ### [{{ p.title }}]({{ p.url }})
 
 {{ p.excerpt }}
----
 {% endfor %}
 
 ## Study Notes.
 
-{% for p in site.pages %}
+{% assign notes = site.pages | where: "dir", "/notes/" %}
+{% for p in notes %}
 [{{ p.title }}]({{ p.url }})
 {% endfor %}
