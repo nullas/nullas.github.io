@@ -1,0 +1,22 @@
+baseURL: https://nullas.github.io/
+languageCode: en-us
+title: I Don't Understand
+theme: ["PaperMod"]
+params:
+  defaultTheme: dark
+  disableThemeToggle: true
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
