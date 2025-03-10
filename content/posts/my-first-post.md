@@ -1,6 +1,5 @@
 ---
 date: '2025-03-08T13:11:35-08:00'
-draft: true
 title: 'Hugo Setup with PaperMod and MathJax on GitHub Pages'
 ---
 ## tl;dr
