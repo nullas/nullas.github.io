@@ -90,11 +90,14 @@ Create `layouts/partials/extend_head.html` with the following content to inject 
 ### Deploy with GitHub Actions
 
 Exclude the `public/` directory, which is built by Hugo locally by
-adding to `.gitignore`.
+adding it to `.gitignore`.
 
 ```
 public/
 ```
 
-Create an action to build the static site by creating `.github/workflows/hugo.yaml` with the content [here](https://gohugo.io/host-and-deploy/host-on-github-pages/#step-6).
+Create an action to build the static site by creating
+`.github/workflows/hugo.yaml` with the content [here](https://gohugo.io/host-and-deploy/host-on-github-pages/#step-6).
+Mind to change the
+Hugo version and branch.
 
