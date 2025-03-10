@@ -4,7 +4,9 @@ title: 'Hugo Setup with PaperMod and MathJax on GitHub Pages'
 ---
 ## tl;dr
 
-In case I forgot how to figure Hugo, the procedure to set up Hugo with the PaperMod theme on GitHub Pages. MathJax is also enabled and VS code integration with Markdown+Math extension.
+In case I forgot how to figure Hugo, the procedure to set up
+Hugo with the PaperMod theme on GitHub Pages is recorded.
+MathJax is also enabled and VS code integration with Markdown+Math extension.
 
 ### Install Hugo
 
