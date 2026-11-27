@@ -1,0 +1,11 @@
+/* Light code blocks in the light theme, using only PaperMod's own palette:
+   block background = PaperMod's inline-code background (--code-bg),
+   plain code text = PaperMod's body text color (--content).
+   Syntax colors come from Hugo's built-in "github" style (markup.highlight.style). */
+:root[data-theme="light"] {
+    --code-block-bg: var(--code-bg);
+}
+
+[data-theme="light"] .md-content pre code {
+    color: var(--content);
+}
