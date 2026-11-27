@@ -3,7 +3,7 @@ locale: en-us
 title: I Don't Understand
 theme: ["PaperMod"]
 params:
-  defaultTheme: dark
+  defaultTheme: light
   disableThemeToggle: true
 menu:
   main:
