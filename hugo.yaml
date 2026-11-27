@@ -2,9 +2,6 @@ baseURL: https://nullas.github.io/
 locale: en-us
 title: I Don't Understand
 theme: ["PaperMod"]
-params:
-  defaultTheme: dark
-  disableThemeToggle: true
 menu:
   main:
   - identifier: posts
