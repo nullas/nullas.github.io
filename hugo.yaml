@@ -5,6 +5,16 @@ theme: ["PaperMod"]
 params:
   defaultTheme: dark
   disableThemeToggle: true
+menu:
+  main:
+  - identifier: posts
+    name: Posts
+    url: /posts/
+    weight: 10
+  - identifier: about
+    name: About
+    url: /about/
+    weight: 20
 markup:
   goldmark:
     extensions:
