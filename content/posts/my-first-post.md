@@ -4,9 +4,9 @@ title: 'Hugo Setup with PaperMod and MathJax on GitHub Pages'
 ---
 ## tl;dr
 
-In case I forgot how to figure Hugo, the procedure to set up
+In case I forget how to configure Hugo, the procedure to set up
 Hugo with the PaperMod theme on GitHub Pages is recorded.
-MathJax is also enabled and VS code integration with Markdown+Math extension.
+MathJax is also enabled and VS Code integration with Markdown+Math extension.
 
 ### Install Hugo
 
@@ -20,7 +20,7 @@ Hugo. So I have to install Golang and Hugo from their sources.
 
 ### Create the New Site
 
-Run to create a new site.
+Run the following to create a new site.
 
 ```shell
 hugo new site nullas.github.io --format yaml --force
@@ -36,7 +36,7 @@ Add the following config in `hugo.yaml`.
 theme: ["PaperMod"]
 ```
 
-Clone the PaperMod these repository.
+Clone the PaperMod theme repository.
 
 ```shell
 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
@@ -44,7 +44,7 @@ git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git t
 
 ### Enable MathJax
 
-Escape the brackets as delimiters for Tex. Add the following to `hugo.yaml`.
+Escape the brackets as delimiters for TeX. Add the following to `hugo.yaml`.
 
 ```yaml
 markup:
@@ -63,7 +63,7 @@ markup:
         enable: true
 ```
 
-Create `layouts/partials/math.html` with the following content
+Create `layouts/partials/math.html` with the following content:
 
 ```html
 <script type="text/javascript" id="MathJax-script" async
@@ -82,7 +82,7 @@ Create `layouts/partials/math.html` with the following content
 </script>
 ```
 
-Create `layouts/partials/extend_head.html` with the following content to inject `layouts/partials/math.html` to all pages. (I don't care it might take longer for the site to load.)
+Create `layouts/partials/extend_head.html` with the following content to inject `layouts/partials/math.html` to all pages. (I don't care if it takes longer for the site to load.)
 
 ```
 {{ partial "math.html" . }}
@@ -99,6 +99,6 @@ public/
 
 Create an action to build the static site by creating
 `.github/workflows/hugo.yaml` with the content [here](https://gohugo.io/host-and-deploy/host-on-github-pages/#step-6).
-Mind to change the
+Remember to change the
 Hugo version and branch.
 
