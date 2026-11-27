@@ -16,6 +16,8 @@ menu:
     url: /about/
     weight: 20
 markup:
+  highlight:
+    style: github
   goldmark:
     extensions:
       passthrough:
